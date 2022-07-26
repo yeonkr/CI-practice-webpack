@@ -1,6 +1,6 @@
 import { Form, Discussions } from './components';
 import { useEffect, useState } from 'react';
-// import logo from './logo192.png';
+import logo from './logo192.png';
 
 function App() {
   const domain = 'http://localhost:3001';
@@ -56,7 +56,7 @@ function App() {
 
   return (
     <>
-      {/* <img src={logo} alt="sth" /> */}
+      <img src={logo} alt="sth" />
       <h1>My Agora States</h1>
       <Form addDiscussion={addDiscussion}></Form>
       <Discussions
