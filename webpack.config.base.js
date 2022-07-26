@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].[contenthash:8].js',
-    clean: true
+    clean: true,
   },
   module: {
     rules: [
@@ -31,7 +31,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: "./src/favicon.ico"
+      favicon: './src/favicon.ico',
     }),
   ],
 };
